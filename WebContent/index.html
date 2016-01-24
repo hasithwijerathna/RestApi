@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<head ng-app="myApp">
+	<meta charset="ISO-8859-1">
+	<title>Insert title here</title>
+	<script src="js/angular.min.js"></script>
+	<script src="js/MainController.js"></script>
 </head>
-<body>
-<h1>Hello Sample Demo</h1>
-<a href="rest/resource/hello">Sample link</a>
+<body ng-controller="mainController">
+	<h1>Hello Sample Demo</h1>
+	<a href="rest/resource/hello">Sample link</a>
+	<p>{{name}}</p>
 </body>
 </html>
