@@ -3,6 +3,7 @@ package com.hasith.dao.impl;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.hasith.dao.DaoClass;
 import com.hasith.model.Student;
 
 public class DaoClassImpl implements DaoClass {

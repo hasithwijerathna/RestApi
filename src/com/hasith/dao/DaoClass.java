@@ -1,4 +1,4 @@
-package com.hasith.dao.impl;
+package com.hasith.dao;
 
 import java.util.List;
 

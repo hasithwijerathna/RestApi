@@ -7,7 +7,7 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-import com.hasith.dao.impl.DaoClass;
+import com.hasith.dao.DaoClass;
 import com.hasith.dao.impl.DaoClassImpl;
 import com.hasith.model.Student;
 
