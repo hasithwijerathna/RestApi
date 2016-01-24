@@ -17,6 +17,10 @@ import com.hasith.model.Student;
 @Path("/resource")
 public class Application {
 
+	/**
+	 * iniitial method
+	 * @return
+	 */
     @GET
     @Path("/hello")
     @Produces(MediaType.APPLICATION_JSON)
