@@ -3,8 +3,10 @@
   <groupId>SampleDemo</groupId>
   <artifactId>SampleDemo</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <packaging>war</packaging>
+  <packaging>jar</packaging>
   <dependencies>
+  
+  	<!-- Rest dependencies -->
     <dependency>
       <groupId>com.sun.jersey</groupId>
       <artifactId>jersey-server</artifactId>
@@ -24,6 +26,20 @@
       <groupId>com.sun.jersey</groupId>
       <artifactId>jersey-servlet</artifactId>
       <version>1.19</version>
+    </dependency>
+    
+    <!-- Hibernate dependencies -->
+    <dependency>
+    	<groupId>org.hibernate</groupId>
+    	<artifactId>hibernate-core</artifactId>
+    	<version>4.2.7.SP1</version>
+    </dependency>
+    <dependency>
+    	<groupId>mysql</groupId>
+	  <artifactId>mysql-connector-java</artifactId>
+	  <version>5.1.21</version>
+	  <type>jar</type>
+	  <scope>compile</scope>
     </dependency>
 
   </dependencies>
