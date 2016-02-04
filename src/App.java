@@ -1,9 +1,6 @@
-import org.hibernate.Session;
-
 import com.hasith.dao.StudentManipulation;
 import com.hasith.dao.impl.StudentManipulationImpl;
 import com.hasith.model.Student;
-import com.hasith.util.HibernateUtilities;
 
 public class App {
 	public static void main(String[] args) {

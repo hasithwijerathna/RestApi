@@ -10,32 +10,30 @@ import com.hasith.model.Student;
 import com.hasith.util.HibernateUtilities;
 
 public class StudentManipulationImpl implements StudentManipulation {
-	
-	
-	
-	public List<Student> getAllStudent(){
+
+	public List<Student> getAllStudent() {
 		List<Student> students = new ArrayList<>();
 		students.add(new Student(1, "Kamal"));
 		students.add(new Student(2, "Nimal"));
 		students.add(new Student(3, "Ranil"));
 		students.add(new Student(4, "Sunil"));
 		students.add(new Student(5, "Janith"));
- 		return students;
+		return students;
 	}
 
 	@Override
 	public Student getStudentById(int id) {
-    	for(Student student : getAllStudent()){
-    		if(student.getId() == id){
-    			return student;
-    		}
-    	}
-    	return null;
+		for (Student student : getAllStudent()) {
+			if (student.getId() == id) {
+				return student;
+			}
+		}
+		return null;
 	}
 
 	@Override
 	public Student insertStudent(Student student) {
-		Session session =  HibernateUtilities.getSessionFactory().openSession();
+		Session session = HibernateUtilities.getSessionFactory().openSession();
 		session.beginTransaction();
 		session.save(student);
 		session.getTransaction().commit();
