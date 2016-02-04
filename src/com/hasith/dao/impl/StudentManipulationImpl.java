@@ -3,10 +3,15 @@ package com.hasith.dao.impl;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.hasith.dao.DaoClass;
-import com.hasith.model.Student;
+import org.hibernate.Session;
 
-public class DaoClassImpl implements DaoClass {
+import com.hasith.dao.StudentManipulation;
+import com.hasith.model.Student;
+import com.hasith.util.HibernateUtilities;
+
+public class StudentManipulationImpl implements StudentManipulation {
+	
+	
 	
 	public List<Student> getAllStudent(){
 		List<Student> students = new ArrayList<>();
@@ -26,5 +31,16 @@ public class DaoClassImpl implements DaoClass {
     		}
     	}
     	return null;
+	}
+
+	@Override
+	public Student insertStudent(Student student) {
+		Session session =  HibernateUtilities.getSessionFactory().openSession();
+		session.beginTransaction();
+		session.save(student);
+		session.getTransaction().commit();
+		session.close();
+		HibernateUtilities.getSessionFactory().close();
+		return student;
 	}
 }

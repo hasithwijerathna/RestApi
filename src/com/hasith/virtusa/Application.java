@@ -8,8 +8,8 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-import com.hasith.dao.DaoClass;
-import com.hasith.dao.impl.DaoClassImpl;
+import com.hasith.dao.StudentManipulation;
+import com.hasith.dao.impl.StudentManipulationImpl;
 import com.hasith.model.Student;
 
 /**
@@ -18,7 +18,7 @@ import com.hasith.model.Student;
 @Path("/resource")
 public class Application {
 
-	DaoClass all = new DaoClassImpl();
+	StudentManipulation all = new StudentManipulationImpl();
 	
 	/**
 	 * iniitial method
