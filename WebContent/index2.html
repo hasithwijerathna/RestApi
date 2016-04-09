@@ -6,14 +6,11 @@
 	
     <link rel="stylesheet" type="text/css" href="css/select2.min.css">
 	
-	
-	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/select2.min.js"></script>
 	<script type="text/javascript" src="js/homeShow.js"></script>
-	
-	
+	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/angular.min.js"></script>
-	<script type="text/javascript" src="js/app.js"></script>	
+	<script type="text/javascript" src="js/app.js"></script>		
 	
 	
 </head>
@@ -21,9 +18,9 @@
 	<h1>Hello Sample Demo</h1>
 	<input type="text" id="student_id" placeholder="Insert student id">
 	<input type="button" value="search" id="btn_search">
-	<a href="rest/resource/all">Sample link</a>
+	<a href="rest/resource/hello">Sample link</a>
 	
-	<select id="e1">
+	<select id="selectname" style="width:400px">
 		<option></option>
 		<option ng-repeat="student in students">{{student.name}}</option>
 	</select>

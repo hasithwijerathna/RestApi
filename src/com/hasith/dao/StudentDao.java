@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.hasith.model.Student;
 
-public interface StudentManipulation {
+public interface StudentDao {
 
 	List<Student> getAllStudent();
 
